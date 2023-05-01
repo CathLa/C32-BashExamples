@@ -7,11 +7,19 @@
 #           -ou appelez ./exercice1.sh (choix d)
 #4 à chaque début de boucle, afficher le menu
 
+afficherMenu() {
+    clear
+    echo "------------------------------------"
+    echo "-    Vous avez 2 choix             -"
+    echo "-    1. Quitter (q)                -"
+    echo "-    2. Appelez l'exercice 1 (d)   -"
+    echo "------------------------------------"
+
+}
+choix=
 while [[ $choix != q ]]
 do 
-    echo "Vous avez 2 choix 1. Quitter (q)"
-    echo "                  2. Appelez l'exercice 1 (d)"
-
+    afficherMenu
     read -p "Réponse : " choix 
 
     if [[ $choix = d ]]
