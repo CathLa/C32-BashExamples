@@ -14,10 +14,8 @@ do
 
     read -p "Réponse : " choix 
 
-    if [[ $choix = q ]]
+    if [[ $choix = d ]]
     then 
-        exit 
-    else 
-    ./exercice1.sh 
+        ./exercice1.sh 
     fi 
 done
